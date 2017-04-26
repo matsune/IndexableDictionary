@@ -26,11 +26,11 @@
 /* Begin PBXFileReference section */
 		136122A31EB0EBA4009F45E4 /* IndexableDictionary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IndexableDictionary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		136122A61EB0EBA4009F45E4 /* IndexableDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexableDictionary.h; sourceTree = "<group>"; };
-		136122A71EB0EBA4009F45E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = IndexableDictionary/Info.plist; sourceTree = "<group>"; };
+		136122A71EB0EBA4009F45E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Info.plist; sourceTree = "<group>"; };
 		136122AC1EB0EBA4009F45E4 /* IndexableDictionaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndexableDictionaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		136122B11EB0EBA4009F45E4 /* IndexableDictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexableDictionaryTests.swift; sourceTree = "<group>"; };
 		136122B31EB0EBA4009F45E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		136122BE1EB0EBD7009F45E4 /* IndexableDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndexableDictionary.swift; path = ../../IndexableDictionary2/Sources/IndexableDictionary.swift; sourceTree = "<group>"; };
+		136122BE1EB0EBD7009F45E4 /* IndexableDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndexableDictionary.swift; path = IndexableDictionary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +55,10 @@
 		136122991EB0EBA4009F45E4 = {
 			isa = PBXGroup;
 			children = (
-				136122BD1EB0EBCB009F45E4 /* Supporting Files */,
-				136122A51EB0EBA4009F45E4 /* Sources */,
 				136122B01EB0EBA4009F45E4 /* IndexableDictionaryTests */,
 				136122A41EB0EBA4009F45E4 /* Products */,
+				136122A51EB0EBA4009F45E4 /* Sources */,
+				136122BD1EB0EBCB009F45E4 /* Supporting Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,7 +78,7 @@
 				136122BE1EB0EBD7009F45E4 /* IndexableDictionary.swift */,
 			);
 			name = Sources;
-			path = IndexableDictionary;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		136122B01EB0EBA4009F45E4 /* IndexableDictionaryTests */ = {
@@ -96,6 +96,7 @@
 				136122A71EB0EBA4009F45E4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
