@@ -10,6 +10,7 @@
 		136122AD1EB0EBA4009F45E4 /* IndexableDictionary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136122A31EB0EBA4009F45E4 /* IndexableDictionary.framework */; };
 		136122B21EB0EBA4009F45E4 /* IndexableDictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136122B11EB0EBA4009F45E4 /* IndexableDictionaryTests.swift */; };
 		136122B41EB0EBA4009F45E4 /* IndexableDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 136122A61EB0EBA4009F45E4 /* IndexableDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		136122BF1EB0EBD7009F45E4 /* IndexableDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136122BE1EB0EBD7009F45E4 /* IndexableDictionary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,10 +26,11 @@
 /* Begin PBXFileReference section */
 		136122A31EB0EBA4009F45E4 /* IndexableDictionary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IndexableDictionary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		136122A61EB0EBA4009F45E4 /* IndexableDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexableDictionary.h; sourceTree = "<group>"; };
-		136122A71EB0EBA4009F45E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		136122A71EB0EBA4009F45E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = IndexableDictionary/Info.plist; sourceTree = "<group>"; };
 		136122AC1EB0EBA4009F45E4 /* IndexableDictionaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndexableDictionaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		136122B11EB0EBA4009F45E4 /* IndexableDictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexableDictionaryTests.swift; sourceTree = "<group>"; };
 		136122B31EB0EBA4009F45E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		136122BE1EB0EBD7009F45E4 /* IndexableDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndexableDictionary.swift; path = ../../IndexableDictionary2/Sources/IndexableDictionary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +55,8 @@
 		136122991EB0EBA4009F45E4 = {
 			isa = PBXGroup;
 			children = (
-				136122A51EB0EBA4009F45E4 /* IndexableDictionary */,
+				136122BD1EB0EBCB009F45E4 /* Supporting Files */,
+				136122A51EB0EBA4009F45E4 /* Sources */,
 				136122B01EB0EBA4009F45E4 /* IndexableDictionaryTests */,
 				136122A41EB0EBA4009F45E4 /* Products */,
 			);
@@ -68,12 +71,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		136122A51EB0EBA4009F45E4 /* IndexableDictionary */ = {
+		136122A51EB0EBA4009F45E4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				136122A61EB0EBA4009F45E4 /* IndexableDictionary.h */,
-				136122A71EB0EBA4009F45E4 /* Info.plist */,
+				136122BE1EB0EBD7009F45E4 /* IndexableDictionary.swift */,
 			);
+			name = Sources;
 			path = IndexableDictionary;
 			sourceTree = "<group>";
 		};
@@ -84,6 +88,14 @@
 				136122B31EB0EBA4009F45E4 /* Info.plist */,
 			);
 			path = IndexableDictionaryTests;
+			sourceTree = "<group>";
+		};
+		136122BD1EB0EBCB009F45E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				136122A71EB0EBA4009F45E4 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +160,7 @@
 				TargetAttributes = {
 					136122A21EB0EBA4009F45E4 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					136122AB1EB0EBA4009F45E4 = {
@@ -196,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				136122BF1EB0EBD7009F45E4 /* IndexableDictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +334,7 @@
 		136122B81EB0EBA4009F45E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,6 +346,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.matsune.IndexableDictionary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +354,7 @@
 		136122B91EB0EBA4009F45E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +373,7 @@
 		136122BB1EB0EBA4009F45E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = IndexableDictionaryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.matsune.IndexableDictionaryTests;
@@ -367,6 +385,7 @@
 		136122BC1EB0EBA4009F45E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = IndexableDictionaryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.matsune.IndexableDictionaryTests;
