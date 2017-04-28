@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1334FFD81EB32569007FE17E /* IndexableDictionary+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1334FFD71EB32569007FE17E /* IndexableDictionary+Description.swift */; };
 		136122AD1EB0EBA4009F45E4 /* IndexableDictionary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136122A31EB0EBA4009F45E4 /* IndexableDictionary.framework */; };
 		136122B21EB0EBA4009F45E4 /* IndexableDictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136122B11EB0EBA4009F45E4 /* IndexableDictionaryTests.swift */; };
 		136122B41EB0EBA4009F45E4 /* IndexableDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 136122A61EB0EBA4009F45E4 /* IndexableDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1334FFD71EB32569007FE17E /* IndexableDictionary+Description.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IndexableDictionary+Description.swift"; sourceTree = "<group>"; };
 		136122A31EB0EBA4009F45E4 /* IndexableDictionary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IndexableDictionary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		136122A61EB0EBA4009F45E4 /* IndexableDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexableDictionary.h; sourceTree = "<group>"; };
 		136122A71EB0EBA4009F45E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			children = (
 				136122A61EB0EBA4009F45E4 /* IndexableDictionary.h */,
 				136122BE1EB0EBD7009F45E4 /* IndexableDictionary.swift */,
+				1334FFD71EB32569007FE17E /* IndexableDictionary+Description.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				136122BF1EB0EBD7009F45E4 /* IndexableDictionary.swift in Sources */,
+				1334FFD81EB32569007FE17E /* IndexableDictionary+Description.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
